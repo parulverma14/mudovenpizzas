@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Mud Oven Pizzas</title>
+
+  </head>
+  <bR>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="http://127.0.0.1:8000/home">Mud Oven Pizza</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link " aria-current="page" href="http://127.0.0.1:8000/home">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="http://127.0.0.1:8000/about">About us</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="http://127.0.0.1:8000/pizzashop">Pizzashop</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contact Us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="https://www.youtube.com/">Youtube</a></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/">Facebook</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://simplypythonbeginner.blogspot.com/">Blogger</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <!------slide show starts here---->
+    {%load static%}
+    <img src="{%static 'mud.jpg' %}" class="img-fluid" alt="Parul" style="width:100%;height:300px;"></br> <!---- Option 2: Separate Popper and Bootstrap JS -->
+   </br>
+  </br>
+ <h2 style="background-color:DodgerBlue;">Offers</h2>
+  <div class="container-fluid">
+  <div class="row mb-2 my-4">
+  <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">CLASSIC COMBO</strong>
+          <h5 class="mb-0">Any Mud Oven Classic</h5>
+          <h6 class="mb-0"> 1-Pizza (Small)  - 85/-</h6>
+          <h6 class="mb-0"> 1-Masala Garlic  - 70/- </h6>
+          <h6 class="mb-0"> 1-Cold Drink(200ml)-20/- </h6>
+          <pre><h5 class="mb-1 text-muted">        <STRIKE>  Rs-175/-</STRIKE> <h5 class="mb-0">   ONLY   Rs-150/-</h5></h5></pre>
+
+      </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="{%static 'mud1.jpg' %}" class="bd-placeholder-img" width="200" height="250" alt="...">
+
+        </div>
+      </div>
+    </div>
+
+<div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">PANEER COMBO</strong>
+          <h5 class="mb-0">Any Mud Oven </h5>
+          <h6 class="mb-0"> 1-Paneer Pizza (M)  - 220/-</h6>
+          <h6 class="mb-0"> 1-Psneer Burger  - 70/- </h6>
+          <h6 class="mb-0"> 1-Cold Drink(400ml)- 40/- </h6>
+          <pre><h5 class="mb-1 text-muted">        <STRIKE>  Rs-330/-</STRIKE> <h5 class="mb-0">   ONLY   Rs-290/-</h5></h5></pre>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+         <img src="{%static 'thumb2.jpg' %}" class="bd-placeholder-img" width="200" height="250" alt="...">
+
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2017-2020 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+  </body>
+</html>
